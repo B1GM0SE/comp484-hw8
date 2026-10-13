@@ -1,0 +1,68 @@
+/* Color Palette
+#0B132B - navy
+#1C2541 - dark blue
+#3A506B - slate blue
+#5BC0BE - teal accent
+#F5F7FA - light background
+*/
+
+/* Global styles 
+------------------------------------*/
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    color: #1C2541;
+    background-color: #F5F7FA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {max-width: 100%; height: auto; border: 5px solid #5BC0BE;}
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.25; }
+h1 { margin: 0; color: #FFFFFF; font-size: 3em; font-weight: 700; }
+h2 { margin-top: 0; font-size: 1.65rem; font-weight: 600; }
+h3 {margin-bottom: 4px; color: #1C2541; font-size: 1.25rem; }
+p {margin-top: 8px; }
+.content-wrap {max-width: 950px; margin: 0 auto; padding: 50px; overflow: hidden;}
+.column-narrow {width: 30%; float: left; padding-right: 3%; min-height: 175px; }
+.column-wide { width: 70%; float: left; min-height: 225px; }
+header, main, footer { padding: 0; }
+
+/* Header & Footer 
+------------------------------------*/
+.profile-img { width: 30%; max-width: 300px; aspect-ratio: 1/1; object-fit: cover; padding-right: 0; border-radius: 50%; }
+header {color: #FFFFFF; background-color: #0B132B;}
+header h2 { margin: 0 0 20px; color: #5BC0BE; font-size: 1.15rem; }
+header p { margin-bottom: 0; }
+footer { color: #FFFFFF; background-color: #1C2541; text-align: center; }
+footer h2 { margin-top: 0; }
+footer a {display: inline-block; margin: 5px 12px; color: #5BC0BE; font-weight: 600; text-decoration: none; }
+footer a:hover {color: #FFFFFF; text-decoration: underline; }
+footer p {margin-bottom: 0; font-size: 0.9rem; }
+.contact-info a { display: inline-block; padding: 10px; }
+
+
+/* Work Experience
+------------------------------------*/
+main { max-width: 950px; margin: 0 auto; }
+section { margin-bottom: 34px; background: #FFFFFF; border-left: 6px solid #3A506B; box-shadow: 0 4px 14px rgba(11, 19, 43, .08); }
+section h2 { margin-top: 0; color: #3A506B; border-bottom: 2px solid #5BC0BE; padding-bottom: 8px; }
+section p {margin-bottom: 14px; }
+li {margin-bottom: 8px; }
+.job-item { clear: both; }
+.job-item + .job-item { margin-top: 20px; }
+
+
+/* Education
+------------------------------------*/
+section:last-child { border-left-color: #5BC0BE; }
+
+@media (max-width: 650px) {
+    .content-wrap { padding: 36px 7%; }
+    .column-narrow, .column-wide { width: 100%; float: none; min-height: 0; padding-right: 0; }
+    .profile-img { display: block; width: 220px; margin: 0 auto 20px;}
+
+    header .column-wide { text-align: center; }
+    h1 {font-size: 2.25rem; }
+}
