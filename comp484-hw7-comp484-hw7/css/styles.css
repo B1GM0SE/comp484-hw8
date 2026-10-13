@@ -29,6 +29,27 @@ p {margin-top: 8px; }
 .column-wide { width: 70%; float: left; min-height: 225px; }
 header, main, footer { padding: 0; }
 
+/* Navigation
+------------------------------------*/
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px;
+    background-color: #1C2541;
+    text-align: center;
+}
+.site-nav a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+.site-nav a:hover {
+    color: #5BC0BE;
+}
+
 /* Header & Footer 
 ------------------------------------*/
 .profile-img { width: 30%; max-width: 300px; aspect-ratio: 1/1; object-fit: cover; padding-right: 0; border-radius: 50%; }
@@ -65,4 +86,17 @@ section:last-child { border-left-color: #5BC0BE; }
 
     header .column-wide { text-align: center; }
     h1 {font-size: 2.25rem; }
+    .site-nav a { display: block; margin: 8px 0; }
 }
+
+/* Cybersecurity background
+------------------------------------*/
+#work {
+    background: linear-gradient(rgba(11, 19, 43, 0.88),
+    rgba(58, 80, 107, 0.88)), url("../images/cybersecurity-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+#work h2 { color: #FFFFFF; }
+#work h3 { color: #5BC0BE; }
